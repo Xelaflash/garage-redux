@@ -9,7 +9,7 @@ const BASE_URL = 'https://wagon-garage-api.herokuapp.com';
 export function fetchCars() {
   // AJAX request
   const promise = fetch("https://wagon-garage-api.herokuapp.com/scep-garage/cars")
-  .then(response => response.json());
+    .then(response => response.json());
 
   return {
     type: FETCH_CARS,
@@ -35,7 +35,7 @@ export function createCar(garage, car, callback) {
   const request = fetch(url, {
     method: 'POST',
     headers: {
-      'Accept': 'application/json',
+      Accept: 'application/json',
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(car)

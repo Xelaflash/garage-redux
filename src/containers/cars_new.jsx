@@ -4,8 +4,6 @@ import { reduxForm, Field } from 'redux-form';
 import { Link } from 'react-router-dom';
 import { createCar } from '../actions';
 
-const required = value => value ? undefined : 'Required';
-
 class CarsNew extends Component {
   onSubmit = (values) => {
     this.props.createCar(this.props.garage, values, () => {
