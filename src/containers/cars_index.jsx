@@ -10,7 +10,7 @@ class CarsIndex extends Component {
     this.props.fetchCars();
   }
 
-  render() {
+  renderCars() {
     return this.props.cars.map((car) => {
       return (
         <Link to={`/cars/${car.id}`} key={car.id}>
@@ -21,6 +21,18 @@ class CarsIndex extends Component {
           </div>
         </Link>);
     });
+  }
+  render() {
+    return (
+      <div>
+        <div className="first-row">
+          <Link className="btn btn-primary btn-cta" to="/cars/new">
+            Lets register a new car!
+          </Link>
+        </div>
+        {this.renderCars()}
+      </div>
+    );
   }
 }
 
