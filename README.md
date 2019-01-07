@@ -1,3 +1,6 @@
+# React-Redux with router exercice for le wagon react track
+Done in Oct 2018
+
 # redux-router-boilerplate
 
 Simple React + Router + Redux starter with the following config:
